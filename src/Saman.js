@@ -30,7 +30,7 @@ function Saman({title, image,id, price, rating}) {
                 </p>
                 <div className='saman__rating'>
                     {Array(rating).fill().map((_, i) => (<p>⭐</p>))}
-                    <p>⭐</p>
+                    <p>⭐ </p>
                 </div>
 
             </div>
