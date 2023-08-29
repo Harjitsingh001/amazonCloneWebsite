@@ -22,11 +22,11 @@ function Header() {
             </Link>
 
             <div className="header__search">
-                <input style={{ width: 1061 }}
+                <input style={{ width: 950  }}
                     className='header__searchInput" type="text' />
-
+                 <FontAwesomeIcon className='header__searchIcon' icon={faSearch} />
             </div>
-            <FontAwesomeIcon className='header__searchIcon' icon={faSearch} />
+           
 
             <div className='header__nav'>
                 <Link to={!user && './login'}>
