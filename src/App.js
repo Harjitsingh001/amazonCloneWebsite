@@ -9,7 +9,8 @@ import { auth } from './firebase';
 import { useStateValue } from './SttateProvider';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
-// import { Payment } from '@mui/icons-material';
+import Footer from './Footer';
+// import { Payment } from '@mui/icons-material;
 
 
 const promise =loadStripe("pk_test_51NRB9OSDHbD7XrX9zyPMuR5PEA9UZgtX94WEsPKCB190khh72EJ6VcVsPC81sMU5d0R1c73wXLP7riGQuQwcqm7j00ttAeU5XU")
@@ -49,8 +50,8 @@ function App() {
       <div>
         <Routes>
           <Route path='/checkout' element={<><Header /><Checkout /> </>} />
-          <Route path='/' element={<><Header /> <Home /></>} />
-          <Route path='/login' element={<> <Login /></>} />
+          <Route path='/amazon-clone' element={<><Header /> <Home /> <Footer/></>} />
+          <Route path='/amazon-clone/login' element={<> <Login /></>} />
           <Route path='/payment' element={<><Header />
             <Elements stripe={promise}>
               <Payment />
