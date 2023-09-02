@@ -49,9 +49,9 @@ function App() {
     <Router>
       <div>
         <Routes>
-          <Route path='/checkout' element={<><Header /><Checkout /> </>} />
+          <Route path='/checkout' element={<><Header /><Checkout /> <Footer/> </>} />
           <Route path='/amazon-clone' element={<><Header /> <Home /> <Footer/></>} />
-          <Route path='/amazon-clone/login' element={<> <Login /></>} />
+          <Route path='/amazon-clone/login' element={<> <Login /> </>} />
           <Route path='/payment' element={<><Header />
             <Elements stripe={promise}>
               <Payment />

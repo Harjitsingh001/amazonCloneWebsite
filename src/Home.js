@@ -20,7 +20,7 @@ function Home() {
 
 
             <div className='home__row'>
-                <Saman title="The Maid" className="Hovr"
+                <Saman title="The Maid" 
                     image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt9RmcE1wERfsnVvRkqUjzPO5DDhyRgIQNGQ&usqp=CAU"
                     price={29.99}
                     rating={5} />

@@ -3,12 +3,14 @@
       z-index: -1;
       margin-bottom: -150px;
       mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+      /* background-blend-mode: darken */
     }
   .home__row{
       display: flex;
       z-index: 1;
       margin-left: 5px;
       margin-right: 5px;
+      
   }
 
 
@@ -28,7 +30,7 @@
       background-color: rgba(77, 75, 75, 0.8);
     } */
     
-    .Saman.Hovr:hover {
-      background-color: rgba(77, 75, 75, 0.8);
+    .Hovr:hover {
+      background-color: rgba(172, 159, 159, 0.8);
     }
     

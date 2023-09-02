@@ -11,6 +11,13 @@
     min-width: 100px;
     background-color: rgb(247, 247, 247);
     z-index: 1;
+
+  }
+  .saman:hover{
+    background-color: #bbb8b3;
+    transition: .6s ease;
+    
+
   }
 
   
@@ -19,6 +26,10 @@
     width: 100%;
     object-fit: contain;
     margin-bottom: 15px;
+    background-blend-mode: darken;
+    /* animation: slide 1s infinite; */
+	 
+
   }
   
   .saman__rating {
@@ -30,7 +41,15 @@
     margin-top: 10px;
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
+    cursor: pointer;
+
   }
+  .saman > button:hover {
+    transform: scale(1.1); /* Increase the size by 30% on hover */
+    /* You can adjust the scale factor as needed */
+    transition: transform 0.2s ease; /* Add a smooth transition effect */
+  }
+  
   
   .saman__Price {
     margin-top: 5px;
@@ -42,4 +61,7 @@
     justify-content: center;
   }
    
-  
+  @keyframes slide {
+    0% {transform:translateX(-100%);}
+    100% {transform:translateX(100%);}
+  }
