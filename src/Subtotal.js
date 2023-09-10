@@ -19,9 +19,9 @@ function Subtotal() {
               Subtotal ({basket.length}items): <strong>{value}</strong>
             </p>
             <small className='Subtotal__gift'>
-              <input type="checkbox" />This order contains a gift
+              <input  className =" subb"type="checkbox" />This order contains a gift
             </small>
-            <button onClick={e => navigate('/payment')}>proseed to checkout</button>
+            <button className =" subb"onClick={e => navigate('/payment')}>proseed to checkout</button>
           </>
         )}
         decimalScale={2}
