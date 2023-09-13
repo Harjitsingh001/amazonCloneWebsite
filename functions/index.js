@@ -18,16 +18,19 @@
 //   response.send("Hello from Firebase!");
 // });
 
-const functions = require('firebase-functions');
-const express = require('express');
-const cors = require('cors');
+import { https } from 'firebase-functions';
+import express, { json } from 'express';
+import cors from 'cors';
 const stripe = require('stripe')('sk_test_51NRB9OSDHbD7XrX9ONkQdmQkF3iMYIiNb0yR6Kl4jWdiTkrilv2LXBKsj2jFEEsqJ');
 
+// API comfig 
 const app = express();
 
+//middleware
 app.use(cors({ origin: true }));
-app.use(express.json());
+app.use(json());
 
+// Api routes
 app.get('/', (_request, response) => response.status(200).send('Hello, world!'));
 
-exports.api = functions.https.onRequest(app);
+export const api = https.onRequest(app);
