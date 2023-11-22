@@ -6,7 +6,7 @@ function Home() {
     return (
         <div className='home'>
 
-            <Carousel />
+            <Carousel />    
 
             <div className='home__container'>
                 <img
@@ -15,9 +15,6 @@ function Home() {
                     alt=""
                 />
             </div>
-
-
-
 
             <div className='home__row'>
                 <Saman title="The Maid" 
@@ -31,7 +28,7 @@ function Home() {
             </div>
 
             <div className='home__row'>
-                <Saman title="WISHKEY Remote Control Super High Speed Racing Car With Stylish Looks & Modern Design,RC Vehicle Toy For Kids  (Black, Blue)" className="Hovr"
+                <Saman title="WISHKEY Remote Control Super High Speed Racing Car  For Kids  (Black, Blue)" className="Hovr"
                     image="https://rukminim2.flixcart.com/image/416/416/xif0q/remote-control-toy/8/o/0/remote-control-super-high-speed-racing-car-with-stylish-looks-original-imagqtphzat7xqej.jpeg?q=70"
                     price={9.99}
                     rating={3} />
@@ -49,7 +46,7 @@ function Home() {
             <div className='home__row'>
                 <Saman title="Samsung UN65NU7300 65” 4K Curved TV " className="Hovr"
                     image="https://www.bassheadspeakers.com/wp-content/uploads/2019/07/Samsung-UN65NU7300-65%E2%80%9D-4K-Curved-TV-1024x682.jpg"
-                    price={50}
+                    price={499}
                     rating={5} />
             </div>
 
